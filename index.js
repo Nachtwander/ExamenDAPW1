@@ -68,7 +68,7 @@ app.put("/productos/:id", (req, res) => {
   producto.precio = productoActualizado.precio || producto.precio;
   producto.cantidad = productoActualizado.cantidad || producto.cantidad;
 
-  // Responder con el producto actualizado  
+  // Actualizar producto en el array
   res.json({ mensaje: "Producto actualizado", producto });
   }
 
